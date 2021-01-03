@@ -72,9 +72,10 @@ describe 'hashketball' do
           player[:player_name] == example_player_hash[:player_name]
         end
 
+
         expect(player_stats.keys).to match_array(example_player_hash.keys)
         expect(player_stats.values).to match_array(example_player_hash.values)
-      end
+    end
     end
 
     it 'returns the correct player data for the :away team' do
